@@ -1,0 +1,79 @@
+html {
+   background-color: black;
+   color: white;
+}
+
+.wd-letter {
+    font: 44px system-ui;
+    color: #fff;
+}
+
+.wd-fixed {
+    position:fixed;
+    left:16px;
+    top:16px;
+}
+
+.wd-vl {
+   border-left: 1px solid #505050;
+   position: absolute;
+   left: 50px;
+   top: 0;
+   bottom: 0;
+}
+
+.wd-vl2 {
+   border-right: 1px solid #505050;
+   position: absolute;
+   right: 16px;
+   top: 0;
+   bottom: 0;
+}
+.wd-hl {
+   border-top: 1px solid #505050;
+   position: absolute;
+   top: 5px;
+   left: 4%;
+   right: 0;
+}
+
+.wd-relative {
+    position: relative;
+    top:16px;
+    left:66px;
+}
+
+.wd-relative2 {
+    position: relative;
+    top:16px;
+    left:26px;
+}
+
+.wd-search{
+           background-color: #505050;
+           width: 700px;
+           height: 44px;
+           border-radius: 100px;
+}
+
+.wd-float-left {
+   float:left;
+}
+
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: #FFFFFF;
+  height: 80%;
+  width: 100%;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.wd-padded-top-left {
+  padding-top: 16px;
+  padding-left: 20px;
+}
