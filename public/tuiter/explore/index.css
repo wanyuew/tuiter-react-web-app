@@ -46,7 +46,7 @@ html {
 .wd-relative2 {
     position: relative;
     top:16px;
-    left:26px;
+    left:10px;
 }
 
 .wd-search{
@@ -59,6 +59,12 @@ html {
 .wd-float-left {
    float:left;
 }
+
+.wd-float-right {
+   float:right;
+}
+
+
 
 input {
   all: unset;
@@ -77,3 +83,16 @@ input {
   padding-top: 16px;
   padding-left: 20px;
 }
+
+
+.wd-relative3 {
+    position:relative;
+    top:-43px;
+    right: 300px;
+}
+
+#wd_icon_color {
+    color:#008080;
+}
+
+
