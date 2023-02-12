@@ -13,7 +13,7 @@ html {
    position: absolute;
    left: 58px;
    top: 0;
-   bottom: 0;
+   bottom: -500px;
 }
 
 .wd-vl2 {
@@ -48,11 +48,11 @@ html {
 
 .wd-hl-highlighted {
    border-bottom: 3px solid rgb(29,161,242);
-   position:relative;
+   position:relative;:q
    left: 65px;
-   top: 30px;
+   top: 45px;
    width: 70px;
-    border-radius: 25px;
+   border-radius: 25px;
 }
 .wd-relative {
     position: relative;
