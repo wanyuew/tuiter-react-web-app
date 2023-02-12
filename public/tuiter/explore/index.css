@@ -21,7 +21,7 @@ html {
    position: absolute;
    right: 16px;
    top: 0;
-   bottom: 0;
+   bottom: -200px;
 }
 
 .wd-hl-top {
@@ -36,7 +36,14 @@ html {
    border-bottom: 3px solid #505050;
    position:relative;
    left: 32px;
-   top: 35px;
+   top: 50px;
+}
+
+.wd-hl-bottom2 {
+   border-bottom: 3px solid #505050;
+   position:relative;
+   left: 32px;
+   top: 100px;
 }
 
 .wd-hl-highlighted {
@@ -154,6 +161,20 @@ input {
 
 .wd-not-selected {
     opacity: 0.5;
+}
+
+.wd-img-size {
+     position: relative;
+     width: 75px;
+     height: 75px;
+     border-radius: 4px;
+     top: 15px;
+}
+
+.wd-location3 {
+    margin-left:16px;
+    margin-top:110px;
+    margin-right: 40px;
 }
 
 
