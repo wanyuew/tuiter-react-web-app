@@ -13,7 +13,7 @@ html {
    position: absolute;
    left: 58px;
    top: 0;
-   bottom: -500px;
+   bottom:-500px;
 }
 
 .wd-vl2 {
@@ -21,7 +21,7 @@ html {
    position: absolute;
    right: 16px;
    top: 0;
-   bottom: -200px;
+   bottom: -500px;
 }
 
 .wd-hl-top {

@@ -1,0 +1,44 @@
+html {
+   background-color: black;
+   color: white;
+}
+#wd-header {
+    font: 33px system-ui;
+}
+
+.wd-text-gray {
+    color: #D3D3D3;
+    font-size: 13px;
+}
+.wd-border-style {
+   border-width: 1px;
+   border-style: solid;
+   border-color: rgb(47, 51, 54);
+}
+
+.wd-padding {
+    padding-top: 12px;
+    padding-left: 16px;
+}
+
+.wd-border-position {
+   position:absolute;
+   left:16px;
+   right:16px;
+}
+
+.wd-hl-bottom {
+   border-bottom: 1px solid rgb(47, 51, 54);
+   position:relative;
+   left:-16px;
+}
+
+.wd-floating-left {
+    float:left;
+}
+
+.wd-circular-image{
+    border-radius:50%;
+    height:48px;
+    width:48px;
+}
