@@ -27,6 +27,8 @@ html {
    border-width: 1px;
    border-style: solid;
    border-color: rgb(47, 51, 54);
+   min-height: 100%;
+   height: auto !important;
    height: 100%;
 }
 
