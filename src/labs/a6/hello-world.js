@@ -1,12 +1,12 @@
 import Nav from "../../nav";
-import ExploreComponent from "../../tuiter/explore";
+import HomeComponent from "../../tuiter/home";
 function HelloWorld() {
  return (
    <div>
      <Nav/>
      <h1>Hello World!</h1>
-     <h2>test page for other screen</h2>
-     <ExploreComponent/>
+     <h2>test page for home screen</h2>
+     <HomeComponent/>
    </div>
  );
 }
