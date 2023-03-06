@@ -1,0 +1,184 @@
+html {
+   background-color: black;
+   color: white;
+}
+
+.wd-letter {
+    font: 44px system-ui;
+    color: #fff;
+}
+
+.wd-vl {
+   border-left: 1px solid #505050;
+   position: absolute;
+   left: 58px;
+   top: 0;
+   bottom:-500px;
+}
+
+.wd-vl2 {
+   border-right: 1px solid #505050;
+   position: absolute;
+   right: 16px;
+   top: 0;
+   bottom: -500px;
+}
+
+.wd-hl-top {
+   border-top: 1px solid #505050;
+   position:relative;
+   left: 32px;
+   top: -10px;
+   right: -100px;
+}
+
+.wd-hl-bottom {
+   border-bottom: 3px solid #505050;
+   position:relative;
+   left: 32px;
+   top: 50px;
+}
+
+.wd-hl-bottom2 {
+   border-bottom: 3px solid #505050;
+   position:relative;
+   left: 32px;
+   top: 100px;
+}
+
+.wd-hl-highlighted {
+   border-bottom: 3px solid rgb(29,161,242);
+   position:relative;
+   left: 65px;
+   top: 45px;
+   width: 70px;
+   border-radius: 25px;
+}
+.wd-relative {
+    position: relative;
+    left:58px;
+    top:4px;
+}
+
+.wd-relative2 {
+    position: relative;
+    top:16px;
+    left:7px;
+}
+
+.wd-search{
+           background-color: #505050;
+           width: 900px;
+           height: 44px;
+           border-radius: 100px;
+}
+
+.wd-float-left {
+   float:left;
+}
+
+.wd-float-right {
+   float:right;
+}
+
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: #FFFFFF;
+  height: 80%;
+  width: 100%;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.wd-padded-top-left {
+  padding-top: 16px;
+}
+
+
+.wd-relative-icon {
+    position:relative;
+    top:-43px;
+    right: 300px;
+}
+
+#wd_icon_color {
+    color:#008080;
+}
+
+.wd-location {
+    margin-left:16px;
+    margin-top:23px;
+    margin-right: 40px;
+}
+
+.wd-text {
+    font: 20px system-ui;
+    color: rgb(110, 118, 125);
+    opacity: 0.5;
+}
+
+.wd-text_location {
+    position: relative;
+    left:40px;
+    top:15px;
+}
+
+.wd-text_margin {
+    margin-left: 75px;
+}
+
+.wd-highlighted {
+    color: rgb(29,161,242);
+}
+
+.wd-location2 {
+    margin-left:16px;
+    margin-top:55px;
+    margin-right: 40px;
+}
+
+.wd-topic_c {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-title_c {
+    font-size: 15px;
+    position: relative;
+    left:40px;
+    top:5px;
+}
+
+.wd-dots-margin {
+    margin-top:10px;
+    margin-right:-15px;
+    opacity: 0.5;
+}
+
+.wd-not-selected {
+    opacity: 0.5;
+}
+
+.wd-img-size {
+     position: relative;
+     width: 75px;
+     height: 75px;
+     border-radius: 4px;
+     top: 15px;
+}
+
+.wd-location3 {
+    margin-left:16px;
+    margin-top:110px;
+    margin-right: 40px;
+}
+
+
+
+
+
+

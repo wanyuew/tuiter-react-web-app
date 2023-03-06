@@ -1,0 +1,99 @@
+html {
+   background-color: black;
+   color: white;
+}
+#wd-header {
+    font: 33px system-ui;
+}
+
+.wd-text-gray {
+    color: #808080;
+    font-size: 13px;
+}
+
+.wd-text-gray-handle {
+    color: #808080;
+    font-size: 15px;
+}
+
+.wd-text-name {
+    font: 15px system-ui;
+}
+
+.wd-text-post {
+    font: 13px system-ui;
+}
+.wd-border-style {
+   border-width: 1px;
+   border-style: solid;
+   border-color: rgb(47, 51, 54);
+   min-height: 100%;
+   height: auto !important;
+   height: 100%;
+}
+
+.wd-padding-left-16 {
+    padding-top: 12px;
+    padding-left: 16px;
+}
+
+.wd-padding-left-12 {
+    padding-top:12px;
+    padding-left:12px;
+}
+
+.wd-padding-right {
+    padding-top: 12px;
+    padding-right: 16px;
+}
+
+.wd-border-position {
+   position:absolute;
+   left:16px;
+   right:600px;
+}
+
+.wd-hl-bottom {
+   border-bottom: 1px solid rgb(47, 51, 54);
+   position:relative;
+   left:-16px;
+}
+
+.wd-floating-left {
+    float:left;
+}
+.wd-float-right {
+    float:right;
+}
+.wd-circular-image{
+    border-radius:50%;
+    height:48px;
+    width:48px;
+}
+.wd-post-position {
+    position: relative;
+    left: 12px;
+    width: 70%;
+    overflow: hidden;
+}
+
+.wd-post-position-inside {
+    position: relative;
+    top:12px;
+    left: 60px;
+    width: 504px;
+    overflow: hidden;
+}
+
+.wd-highlighted {
+    color: rgb(29,161,242);
+}
+
+.wd-post-image {
+    height:264px;
+    width:504px;
+}
+
+.wd-margin-left {
+    margin-left:50px;
+}
