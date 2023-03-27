@@ -12,6 +12,7 @@ function App() {
                 <Route index element={<Labs/>}/>
                 <Route path="/hello" element={<HelloWorld/>}/>
                 <Route path="/tuiter/*" element={<Tuiter/>}/>
+                <Route path="/*" element={<Labs/>}/>
             </Routes>
         </div>
     </BrowserRouter>
