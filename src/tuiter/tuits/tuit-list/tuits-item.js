@@ -22,7 +22,7 @@ const TuitsItem = (
       <li className="list-group-item">
         <div className="row">
             <div className="col-2">
-                   <img className="rounded-circle" height={48} src={`/images/${tuit.userImg}`}/>
+                   <img className="rounded-circle" height={48} src={`/images/${tuit.image}`}/>
             </div>
             <div className="col-10 container">
                 <span className="fw-bolder">{tuit.userName}</span>
@@ -31,7 +31,7 @@ const TuitsItem = (
                 <span className="col-2">
                  <i className="bi bi-three-dots float-end"></i>
                 </span>
-                <div> {tuit.content}</div>
+                <div> {tuit.tuit}</div>
                 <div className="d-flex">
                     <div className="mt-3 col-3">
                      <i className="bi bi-chat"></i>
@@ -51,4 +51,4 @@ const TuitsItem = (
   );
 };
 
-export default TuitsItemt;
+export default TuitsItem;
