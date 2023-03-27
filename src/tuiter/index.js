@@ -26,7 +26,7 @@ function Tuiter() {
          <Routes>
           <Route index element={<HomeComponent/>}/>
           <Route path="home" element={<HomeComponent/>}/>
-          <Route path="explore_New" element={<ExploreComp/>}/>
+          <Route path="explore_new" element={<ExploreComp/>}/>
         </Routes>
       </div>
       <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
