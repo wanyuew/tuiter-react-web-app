@@ -1,17 +1,18 @@
 import React from "react";
-import tuitsArray from '../tuits/tuit-list/tuitsItems.json';
-import TuitsItem
-  from "../tuits/tuit-list/tuits-item.js";
+// import tuitsArray from '../tuits/tuit-list/tuitsItems.json';
+// import TuitsItem
+//   from "../tuits/tuit-list/tuits-item.js";
+
+import TuitList from "../tuits/tuit-list";
+import WhatsHappening from "./whats-happening"
 
 const HomeComponent = () => {
  return(
-   <ul className="list-group">
-     {
-       tuitsArray.map(tuit =>
-         <TuitsItem
-           key={tuit._id} tuit={tuit}/> )
-     }
-   </ul>
+   <>
+    <h4>Home</h4>
+    <WhatsHappening/>
+    <TuitList/>
+   </>
  );
 };
 export default HomeComponent;
