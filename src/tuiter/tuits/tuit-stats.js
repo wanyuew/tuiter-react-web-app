@@ -4,35 +4,40 @@ import {useDispatch} from "react-redux";
 import {updateTuitThunk} from "../../services/tuits-thunks";
 
 const TuitStats = (
-   {tuit = { "_id": "1",
-          "topic": "Space",
-          "userName": "SpaceX",
-          "time": "2h",
-          "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
-          "image": "spacex.png",
-          "liked": false,
-          "replies": 0,
-          "retuits": 0,
-          "likes": 0,
-          "handle": "@spacex",
-          "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
-          }
+   {  replies,
+      retuits,
+      likes,
+      liked,
+      tuit,
+      disliked,
+      dislikes,
       }) => {
 //     const [likedFlag, setLiked] = useState(liked);
 //     const changeLiked = () => {
 //         setLiked(!likedFlag);
 //     };
     const dispatch = useDispatch();
-    const clickLike = () => {
-            tuit.liked === false ?  dispatch(updateTuitThunk({
-                ...tuit,
-                likes: tuit.likes + 1,
-                liked: true
-            })) :  dispatch(updateTuitThunk({
-                        ...tuit,
-                        likes: tuit.likes - 1,
-                        liked: false
-                    }))
+//     const clickLike = () => {
+//             tuit.liked === false ?  dispatch(updateTuitThunk({
+//                 ...tuit,
+//                 likes: tuit.likes + 1,
+//                 liked: true
+//             })) :  dispatch(updateTuitThunk({
+//                         ...tuit,
+//                         likes: tuit.likes - 1,
+//                         liked: false
+//                     }))
+//
+//         }
+
+        const clickLike = () => {
+            dispatch(
+                          updateTuitThunk({
+                            ...tuit,
+                            likes: tuit.liked ? tuit.likes - 1 : tuit.likes + 1,
+                            liked: !tuit.liked,
+                          })
+               )
 
         }
 
@@ -46,7 +51,6 @@ const TuitStats = (
                         dislikes: tuit.dislikes - 1,
                         disliked: false,
                     }))
-
         }
     return (
         <div className="d-flex">
@@ -58,17 +62,26 @@ const TuitStats = (
                        <i className="bi bi-recycle"></i>
                        <span className="m-2">{tuit.retuits}</span>
                     </div>
-                    <div className="mt-2 col-2">
-                      <i className={tuit.liked? "bi bi-heart-fill text-danger" : "bi bi-heart"}
-                           onClick={() => clickLike()
-                           }></i>
-                          <span className={'ms-2'}>{tuit.likes}</span>
-                       </div>
-                      <div className="mt-2 col-2">
-                             <i className={tuit.disliked? "bi bi-hand-thumbs-down-fill text-secondary" : "bi bi-hand-thumbs-down"}
-                              onClick={() => clickDislike}></i>
-                              <span className={'ms-2'}>{tuit.dislikes}</span>
-                       </div>
+                     <a href="#" className="mt-2 col-2">
+                            <div
+                              onClick= {()=>clickLike()}>
+                              <i
+                                className={tuit.liked ? "bi bi-heart-fill text-danger" : "bi bi-heart"}
+                                aria-hidden={true}
+                              ></i>
+                              <span>{tuit.likes}</span>
+                            </div>
+                          </a>
+                      <a href="#" className="mt-2 col-2">
+                          <div
+                            onClick= {()=>clickDislike()}>
+                            <i
+                              className={tuit.disliked? "bi bi-hand-thumbs-down-fill" : "bi bi-hand-thumbs-down"}
+                              aria-hidden={true}
+                            ></i>
+                            <span>{tuit.dislikes}</span>
+                          </div>
+                        </a>
                      <div className="mt-2 col-2">
                        <i className="bi bi-share"></i>
                      </div>

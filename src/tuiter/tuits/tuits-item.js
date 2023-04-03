@@ -35,7 +35,13 @@ const TuitsItem = ( {tuit = {"_id": "1",
                 </span>
                 <i className="bi bi-x-lg float-end wd-tuit-delete" onClick={() => deleteTuitHandler(tuit._id)}> </i>
                 <div> {tuit.tuit}</div>
-                <TuitStats tuit = {tuit}></TuitStats>
+                <TuitStats  likes={tuit.likes}
+                                     replies={tuit.replies}
+                                     retuits={tuit.retuits}
+                                     liked={tuit.liked}
+                                     dislikes={tuit.dislikes}
+                                     disliked={tuit.disliked}
+                                     tuit={tuit}></TuitStats>
             </div>
        </div>
      </li>
