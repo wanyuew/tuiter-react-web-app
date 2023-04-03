@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import {useDispatch} from "react-redux";
 import {updateTuitThunk} from "../../services/tuits-thunks";
 
@@ -50,43 +50,26 @@ const TuitStats = (
         }
     return (
         <div className="d-flex">
-                   <div className="mt-3 col-3">
+                   <div className="mt-2 col-2">
                        <i className="bi bi-chat"></i>
                        <span className="m-2">{tuit.replies}</span>
                     </div>
-                   <div className="mt-3 col-3">
+                   <div className="mt-2 col-2">
                        <i className="bi bi-recycle"></i>
                        <span className="m-2">{tuit.retuits}</span>
                     </div>
-                    <div className="mt-3 col-3">
-                         <span onClick={clickLike}>
-                            {
-                             tuit.liked &&
-                             <i className= "bi bi-heart-fill text-danger"></i>
-                            }
-                            {
-                             !tuit.liked &&
-                             <i className="bi bi-heart"></i>
-                            }
-                            &nbsp;
-                            {tuit.likes}
-                         </span>
-                     </div>
-                     <div className="mt-3 col-3">
-                            <span onClick={clickDislike}>
-                                {
-                                 tuit.disliked &&
-                                 <i className= "bi bi-hand-thumbs-down-fill"></i>
-                                }
-                                {
-                                 !tuit.disliked &&
-                                 <i className="bi bi-hand-thumbs-down"></i>
-                                }
-                                &nbsp;
-                                {tuit.dislikes}
-                            </span>
-                      </div>
-                     <div className="mt-3 col-3">
+                    <div className="mt-2 col-2">
+                      <i className={tuit.liked? "bi bi-heart-fill text-danger" : "bi bi-heart"}
+                           onClick={() => clickLike()
+                           }></i>
+                          <span className={'ms-2'}>{tuit.likes}</span>
+                       </div>
+                      <div className="mt-2 col-2">
+                             <i className={tuit.disliked? "bi bi-hand-thumbs-down-fill text-secondary" : "bi bi-hand-thumbs-down"}
+                              onClick={() => clickDislike}></i>
+                              <span className={'ms-2'}>{tuit.dislikes}</span>
+                       </div>
+                     <div className="mt-2 col-2">
                        <i className="bi bi-share"></i>
                      </div>
                </div>

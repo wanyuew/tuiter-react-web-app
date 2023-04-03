@@ -29,7 +29,7 @@ const TuitsItem = ( {tuit = {"_id": "1",
             <div className="col-10 container">
                 <span className="fw-bolder">{tuit.userName}</span>
                 <span className="m-1 bi bi-patch-check-fill icon-blue"></span>
-                <span>@{tuit.handle}·{tuit.time}</span>
+                <span>{tuit.handle}·{tuit.time}</span>
                 <span className="col-2">
                  <i className="bi bi-three-dots float-end"></i>
                 </span>
