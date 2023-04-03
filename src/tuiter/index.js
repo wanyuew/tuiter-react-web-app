@@ -1,7 +1,7 @@
 import Nav from "../nav";
 import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
-import ExploreComp from "../tuiter/explore_new/index.js";
+import ExploreComp from "../tuiter/explore_new";
 import {Routes, Route} from "react-router";
 import HomeComponent from "./home";
 import whoReducer
