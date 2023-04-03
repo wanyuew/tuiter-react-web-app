@@ -6,11 +6,11 @@ import TuitItem from "./tuits-item.js";
 
 const TuitsList = () => {
     const {tuits, loading} = useSelector(
-        state => state.tuitsData);
+        state => state.tuits);
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(findTuitsThunk())
-    }, [])
+    }, [dispatch])
 
     console.log(tuits)
     return(
