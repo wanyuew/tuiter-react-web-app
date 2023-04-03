@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 import {useDispatch} from "react-redux";
-import {deleteTuit } from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 import TuitStats from "./tuit-stats";
 
 const TuitsItem = ( {tuit = {"_id": "1",
@@ -18,7 +18,7 @@ const TuitsItem = ( {tuit = {"_id": "1",
                                "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
     } }) => { const dispatch = useDispatch();
             const deleteTuitHandler = (id) => {
-                dispatch(deleteTuit(id));
+                 dispatch(deleteTuitThunk(id));
             }
     return (
       <li className="list-group-item">
@@ -35,7 +35,7 @@ const TuitsItem = ( {tuit = {"_id": "1",
                 </span>
                 <i className="bi bi-x-lg float-end wd-tuit-delete" onClick={() => deleteTuitHandler(tuit._id)}> </i>
                 <div> {tuit.tuit}</div>
-                <TuitStats liked={tuit.liked} likes={tuit.likes} replies={tuit.replies} retuits={tuit.retuits}></TuitStats>
+                <TuitStats tuit = {tuit}></TuitStats>
             </div>
        </div>
      </li>
