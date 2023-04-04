@@ -23,15 +23,16 @@ const TuitStats = (
 
 
    const clickDislike = () => {
-        tuit.disliked ?  dispatch(updateTuitThunk({
-                    ...tuit,
-                    dislikes: tuit.dislikes - 1,
-                    disliked: false,
+        tuit.disliked === false ?  dispatch(updateTuitThunk({
+                ...tuit,
+                dislikes: tuit.dislikes + 1,
+                disliked: true
 
         })) : dispatch(updateTuitThunk({
-                    ...tuit,
-                    dislikes: tuit.dislikes + 1,
-                    disliked: true
+                ...tuit,
+                dislikes: tuit.dislikes - 1,
+                disliked: false,
+
 
         }))
     }
