@@ -4,19 +4,7 @@ import {useDispatch} from "react-redux";
 import {deleteTuitThunk} from "../../services/tuits-thunks";
 import TuitStats from "./tuit-stats";
 
-const TuitsItem = ( {tuit = {"_id": "1",
-                               "topic": "Space",
-                               "userName": "SpaceX",
-                               "time": "2h",
-                               "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
-                               "image": "spacex.png",
-                               "liked": false,
-                               "replies": 0,
-                               "retuits": 0,
-                               "likes": 0,
-                               "handle": "@spacex",
-                               "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
-    } }) => { const dispatch = useDispatch();
+const TuitsItem = ( {tuit}) => { const dispatch = useDispatch();
             const deleteTuitHandler = (id) => {
                  dispatch(deleteTuitThunk(id));
             }
@@ -35,13 +23,7 @@ const TuitsItem = ( {tuit = {"_id": "1",
                 </span>
                 <i className="bi bi-x-lg float-end wd-tuit-delete" onClick={() => deleteTuitHandler(tuit._id)}> </i>
                 <div> {tuit.tuit}</div>
-                <TuitStats  likes={tuit.likes}
-                                     replies={tuit.replies}
-                                     retuits={tuit.retuits}
-                                     liked={tuit.liked}
-                                     dislikes={tuit.dislikes}
-                                     disliked={tuit.disliked}
-                                     tuit={tuit}></TuitStats>
+                <TuitStats  liked={tuit.liked} likes={tuit.likes} replies={tuit.replies} retuits={tuit.retuits} tuit={tuit}></TuitStats>
             </div>
        </div>
      </li>
