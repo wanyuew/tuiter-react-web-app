@@ -16,6 +16,8 @@ const templateTuit = {
     "replies": 0,
     "retuits": 0,
     "likes": 0,
+    "dislikes": 0,
+    "disliked": false
 }
 
 const initialState = {
@@ -50,7 +52,9 @@ const tuitsSlice = createSlice({
            .filter(t => t._id !== payload)
        },
        [createTuitThunk.fulfilled]:
+
          (state, { payload }) => {
+            console.log(payload)
            state.loading = false
            state.tuits.push(payload)
        },
@@ -77,6 +81,7 @@ const tuitsSlice = createSlice({
                 ...action.payload,
                 ...templateTuit,
                 _id: (new Date()).getTime(),
+
             })
         }
     }

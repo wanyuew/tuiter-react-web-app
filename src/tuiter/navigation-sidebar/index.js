@@ -1,16 +1,13 @@
 import React from "react";
+import {Link} from "react-router-dom";
+
 const NavigationSidebar = ({active = 'home'}) => {
  return (
     <div className="list-group">
         <a className="list-group-item">Tuiter</a>
-        <a className={`list-group-item
-                            ${active === 'home'?'active':''}`}>
-             Home
-             </a>
-        <a className={`list-group-item
-                            ${active === 'explore'?'active':''}`}>
-             Explore
-             </a>
+        <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>Home</Link>
+        <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore'?'active':''}`}>Explore</Link>
+
         <a className={`list-group-item
                             ${active === 'notifications'?'active':''}`}>
                Notifications
@@ -27,10 +24,8 @@ const NavigationSidebar = ({active = 'home'}) => {
                             ${active === 'lists'?'active':''}`}>
                Lists
              </a>
-            <a className={`list-group-item
-                             ${active === 'profile'?'active':''}`}>
-                Profile
-              </a>
+           <Link to="/tuiter/profile" className={`list-group-item ${active === 'profile'?'active':''}`}>Profile</Link>
+
               <a className={`list-group-item
                              ${active === 'more'?'active':''}`}>
                 More
