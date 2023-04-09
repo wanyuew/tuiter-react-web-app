@@ -30,7 +30,7 @@ const TweetItem = (
                  <i className="bi bi-three-dots float-end"></i>
                 </span>
                 <div> {tweet.content}</div>
-                <img className="col-11 mt-3 rounded-3" height={300} src={`/images/${tweet.tweetImg}`}/>
+                <img className="col-11 mt-3 rounded-2" height={300} src={`/images/${tweet.tweetImg}`}/>
                 <div className="d-flex">
                     <div className="mt-3 col-3">
                      <i className="bi bi-chat"></i>
