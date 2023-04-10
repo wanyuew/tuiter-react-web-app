@@ -1,16 +1,9 @@
 import axios from 'axios';
 // const TUITS_API = "https://tuiter-node-server-app-plx1.onrender.com/api/tuits";
-  const API_BASE = process.env.REACT_APP_API_BASE;
-  const TUITS_API = `${API_BASE}/tuits`;
+ const API_BASE = process.env.REACT_APP_API_BASE;
+ const TUITS_API = `${API_BASE}/tuits`;
 
 export const createTuit = async (tuit) => {
-         tuit.username = "SpaceX";
-         tuit.handle = "@spacex";
-         tuit.image = "spacex.png";
-         tuit.likes = 0;
-         tuit.liked = false;
-         tuit.dislikes = 0;
-         tuit.disliked = false;
     const response = await axios.post(TUITS_API, tuit)
     return response.data;
 }
